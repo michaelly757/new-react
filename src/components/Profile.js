@@ -1,5 +1,5 @@
 // src/components/Profile.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Profile.css';
 import EditProfile from './EditProfile';
 
@@ -15,7 +15,9 @@ const Profile = () => {
     const toggleEdit = () => {
         setIsEditing(!isEditing);
     };
-
+    useEffect(() => {
+        localStorage.setItem('userData', JSON.stringify(userData));
+    }, [userData]);
     return (
         <div className="profile-container">
             <img 
