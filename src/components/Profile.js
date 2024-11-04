@@ -8,7 +8,7 @@ const Profile = () => {
         name: 'Michael Ly',
         bio: 'Yr 10 High School Student',
         location: 'Adelaide, South Australia',
-        email: 'michaelly192@gmail.com',
+        email: '@gmail.com',
     });
     const [isEditing, setIsEditing] = useState(false);
 
