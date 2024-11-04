@@ -4,11 +4,14 @@ import './Profile.css';
 import EditProfile from './EditProfile';
 
 const Profile = () => {
-    const [userData, setUserData] = useState({
-        name: 'Michael Ly',
-        bio: 'Yr 10 High School Student',
-        location: 'Adelaide, South Australia',
-        email: '@gmail.com',
+    const [userData, setUserData] = useState(() => {
+        const savedData = localStorage.getItem('userData');
+        return savedData ? JSON.parse(savedData) : {
+            name: 'Michael Ly',
+            bio: 'Yr 10 High School Student',
+            location: 'Adelaide, South Australia',
+            email: '@gmail.com',
+        };
     });
     const [isEditing, setIsEditing] = useState(false);
 
