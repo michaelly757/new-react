@@ -1,19 +1,41 @@
-/* src/App.css */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
 .App {
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-start;
-  margin-left: 20px; 
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.elfsight-app-80f1e42d-ab5c-4acb-a214-5f49c7eaac1a {
-  margin-top: 20px; /* Adjust this value for proper spacing below the header */
-  width: 300px; /* Adjust width of the countdown widget */
+/* Countdown Styling */
+.countdown-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0;
+}
+
+.close-btn {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.elfsight-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  width: 300px;
   height: auto;
-  /* No need for absolute positioning, just let the flexbox handle it */
 }

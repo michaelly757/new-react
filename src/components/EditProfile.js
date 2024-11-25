@@ -1,8 +1,11 @@
-// src/components/EditProfile.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const EditProfile = ({ userData, setUserData, toggleEdit }) => {
     const [formData, setFormData] = useState(userData);
+
+    useEffect(() => {
+        setFormData(userData);
+    }, [userData]);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
