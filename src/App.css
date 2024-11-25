@@ -4,3 +4,16 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 }
+.App {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  margin-left: 20px; 
+}
+
+.elfsight-app-80f1e42d-ab5c-4acb-a214-5f49c7eaac1a {
+  margin-top: 20px; /* Adjust this value for proper spacing below the header */
+  width: 300px; /* Adjust width of the countdown widget */
+  height: auto;
+  /* No need for absolute positioning, just let the flexbox handle it */
+}
