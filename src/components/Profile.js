@@ -32,7 +32,7 @@ const Profile = () => {
 
     return (
         <div className="profile-container">
-<motion.img
+            <motion.img
   src={process.env.PUBLIC_URL + '/volleyball.jpg'}  // Removed '/public' from the path
   alt="Volleyball"
   className="profile-picture"
