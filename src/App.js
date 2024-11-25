@@ -61,7 +61,7 @@ const App = () => {
                 <div className="countdown-container">
                     <h2>Christmas Countdown</h2>
                     <div id="countdown" className="countdown"></div>
-                    <button className="close-btn" onClick={closeCountdown}>Close Countdown</button>
+                    <button className="close-btn" onClick={closeCountdown}>Close</button>
                 </div>
             )}
 
