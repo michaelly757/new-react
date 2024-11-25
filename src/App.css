@@ -1,6 +1,56 @@
-/* src/App.css */
-body {
+.App {
+  text-align: center;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+/* Countdown Styling */
+/* App.css */
+.countdown-container {
+  position: fixed;  /* Fix it to a specific position on the screen */
+  bottom: 20px;     /* Set distance from the bottom */
+  left: 50%;        /* Center horizontally */
+  transform: translateX(-50%); /* Offset by half the width to ensure it's centered */
   background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;  /* Ensure it's on top of other elements */
+}
+
+.countdown-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.countdown-container .countdown {
+  font-size: 1.5rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.countdown-container .close-btn {
+  background-color: #ff5e5e;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.countdown-container .close-btn:hover {
+  background-color: #ff4040;
+}
+
+
+.elfsight-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  width: 300px;
+  height: auto;
 }

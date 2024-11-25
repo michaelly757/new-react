@@ -1,12 +1,20 @@
+<<<<<<< HEAD
 // src/components/EditProfile.js
 import React, { useEffect, useState } from 'react';
+=======
+import React, { useState, useEffect } from 'react';
+>>>>>>> cb4422101b8244b979beac4ca6ed6cbf4810597e
 
 const EditProfile = ({ userData, setUserData, toggleEdit }) => {
     const [formData, setFormData] = useState(userData);
 
     useEffect(() => {
         setFormData(userData);
+<<<<<<< HEAD
     },[userData]);
+=======
+    }, [userData]);
+>>>>>>> cb4422101b8244b979beac4ca6ed6cbf4810597e
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
